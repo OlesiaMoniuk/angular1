@@ -1,0 +1,18 @@
+<div *ngFor="let c of cards">
+    <div class="card">
+        <img src="{{c.image}}" alt="two women">
+        <div class="card-general">
+            <div class="card-content">
+                <div class="date-line">
+                    <img class="calendar" src="assets/img/calendar.png" alt="calender">
+                    <p class="date"><span id="datetime">22 вересня 2001</span></p>
+                </div>
+                <h4 class="card-header">{{ c.header }}</h4>
+                <p class="card-text">{{ c.content }}</p>
+            </div>
+            <button class="more" type="button">
+                <p class="button-text">Детальніше</p>
+            </button>
+        </div>
+    </div>
+</div>
